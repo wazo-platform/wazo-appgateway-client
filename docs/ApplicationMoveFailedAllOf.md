@@ -1,0 +1,13 @@
+# ApplicationMoveFailedAllOf
+
+Notification that trying to move a channel to another Stasis application failed.
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**args** | **list[str]** | Arguments to the application | 
+**channel** | [**Channel**](Channel.md) |  | 
+**destination** | **str** |  | 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

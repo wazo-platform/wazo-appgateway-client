@@ -1,0 +1,12 @@
+# BridgeMergedAllOf
+
+Notification that one bridge has merged into another.
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**bridge** | [**Bridge**](Bridge.md) |  | 
+**bridge_from** | [**Bridge**](Bridge.md) |  | 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
