@@ -1,4 +1,4 @@
-# wazo-asyncio-ari
+# wazo-asyncio-ari-client
 
 This library is for connecting to Asterisk ARI with asyncio.
 
