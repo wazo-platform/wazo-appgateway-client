@@ -241,17 +241,6 @@ class ApiClient(object):
         elif isinstance(obj, self.PRIMITIVE_TYPES):
             return obj
         elif isinstance(obj, list):
-    def deserialize_obj(self, data, response_type):
-        """Deserializes data into an object.
-
-        :param data: data to be deserialized.
-        :param response_type: class literal for
-            deserialized object, or string of class name.
-
-        :return: deserialized object.
-        """
-        return self.__deserialize(data, response_type)
-
             return [self.sanitize_for_serialization(sub_obj)
                     for sub_obj in obj]
         elif isinstance(obj, tuple):
@@ -295,6 +284,17 @@ class ApiClient(object):
         except ValueError:
             data = response.data
 
+        return self.__deserialize(data, response_type)
+
+    def deserialize_obj(self, data, response_type):
+        """Deserializes data into an object.
+ 
+        :param data: data to be deserialized.
+        :param response_type: class literal for
+            deserialized object, or string of class name.
+ 
+        :return: deserialized object.
+        """
         return self.__deserialize(data, response_type)
 
     def __deserialize(self, data, klass):
