@@ -1,6 +1,7 @@
 # wazo-asyncio-ari-client
 
 This library is for connecting to Asterisk ARI with asyncio.
+Asyncio asterisk ARI library with X-Asterisk-ID header support
 
 - API version: 5.1.1
 - Package version: 1.0.0
